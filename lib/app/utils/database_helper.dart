@@ -7,7 +7,7 @@ import 'package:sqflite/sqflite.dart';
 class DatabaseHelper {
   static final DatabaseHelper instance = DatabaseHelper._privateConstructor();
 
-  static const _databaseName = 'my_database.db';
+  static const _databaseName = 'me_database.db';
   static const _databaseVersion = 1;
   final box = GetStorage();
 

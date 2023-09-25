@@ -30,20 +30,8 @@ class HomeView extends GetView<HomeController> {
                 height: 40,
               ),
               Container(
-                  height: 150, // Tinggi Container
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius:
-                        BorderRadius.circular(12.0), // Atur radius sudut
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey.withOpacity(0.5), // Warna shadow
-                        spreadRadius: -5, // Penyebaran shadow
-                        blurRadius: 7, // Blur radius shadow
-                        offset: const Offset(0, 3), // Offset dari shadow (X, Y)
-                      ),
-                    ],
-                  ),
+                  height: 170, // Tinggi Container
+
                   child: Obx(
                     () {
                       int totalIncome = 0;
@@ -62,74 +50,56 @@ class HomeView extends GetView<HomeController> {
                         children: [
                           Container(
                             width: mWidth,
-                            decoration: BoxDecoration(
-                              color: AppColor.primaryColor,
-                              borderRadius: const BorderRadius.only(
-                                topLeft: Radius.circular(12.0),
-                                topRight: Radius.circular(12.0),
-                              ),
-                            ),
                             padding: const EdgeInsets.all(20),
-                            child: const Center(
+                            child: Center(
                               child: Text(
                                 'Rangkuman Bulan Ini',
                                 style: TextStyle(
-                                  color: Colors.white,
+                                  color: AppColor.primaryColor,
                                   fontSize: 14,
-                                  fontWeight: FontWeight.w500,
+                                  fontWeight: FontWeight.w800,
                                 ),
                               ),
                             ),
                           ),
                           Container(
-                            margin: const EdgeInsets.all(20),
-                            child: Row(
+                            width: mWidth,
+                            padding: const EdgeInsets.all(20),
+                            margin: const EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                              color: AppColor.dark,
+                              borderRadius: BorderRadius.circular(
+                                  12.0), // Atur radius sudut
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey
+                                      .withOpacity(0.5), // Warna shadow
+                                  spreadRadius: -5, // Penyebaran shadow
+                                  blurRadius: 7, // Blur radius shadow
+                                  offset: const Offset(
+                                      0, 3), // Offset dari shadow (X, Y)
+                                ),
+                              ],
+                            ),
+                            child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                Column(
-                                  children: [
-                                    const Text(
-                                      'Pemasukan',
-                                      style: TextStyle(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                    ),
-                                    const SizedBox(
-                                      height: 10,
-                                    ),
-                                    Text(
-                                      "${FormattedNominal(totalIncome)}", // Format nominal
-                                      style: TextStyle(
-                                        color: AppColor.primaryColor,
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w600,
-                                      ),
-                                    ),
-                                  ],
+                                Text(
+                                  'Pengeluaran ${FormattedNominal(totalExpense)}',
+                                  style: TextStyle(
+                                    color: AppColor.contentColorPink,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w500,
+                                  ),
                                 ),
-                                Column(
-                                  children: [
-                                    const Text(
-                                      'Pengeluaran',
-                                      style: TextStyle(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                    ),
-                                    const SizedBox(
-                                      height: 10,
-                                    ),
-                                    Text(
-                                      "${FormattedNominal(totalExpense)}", // Format nominal
-                                      style: TextStyle(
-                                        color: AppColor.secondary,
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w600,
-                                      ),
-                                    ),
-                                  ],
-                                )
+                                Text(
+                                  "Pemasukan ${FormattedNominal(totalIncome)}",
+                                  style: TextStyle(
+                                    color: AppColor.contentColorGreen,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
                               ],
                             ),
                           )

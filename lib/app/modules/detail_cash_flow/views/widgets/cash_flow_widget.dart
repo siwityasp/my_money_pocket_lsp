@@ -56,8 +56,8 @@ class CashFlowWidget extends StatelessWidget {
           ),
           Icon(
             status_income
-                ? Icons.keyboard_arrow_left
-                : Icons.keyboard_arrow_right,
+                ? Icons.subdirectory_arrow_left
+                : Icons.subdirectory_arrow_right,
             size: 40,
             color: status_income ? AppColor.primaryColor : AppColor.secondary,
           ),

@@ -36,38 +36,33 @@ class LoginView extends GetView<LoginController> {
                 const SizedBox(
                   height: 40,
                 ),
-                const Text(
-                  'My Cash Book',
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontFamily: 'poppins',
-                    fontWeight: FontWeight.w800,
-                  ),
-                ),
-                const Text(
-                  'Version 1.0',
-                  style: TextStyle(
-                    fontSize: 14,
-                    fontFamily: 'poppins',
-                    fontWeight: FontWeight.w200,
-                  ),
-                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    const Text(
+                      'My Cash Book',
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontFamily: 'poppins',
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    const Text(
+                      'V 1.0',
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontFamily: 'poppins',
+                        fontWeight: FontWeight.w200,
+                      ),
+                    ),
+                  ],
+                )
               ],
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  'LOGIN',
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontFamily: 'poppins',
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-                const SizedBox(
-                  height: 40,
-                ),
                 CustomInput(
                   controller: controller.usernameC,
                   label: "Username",
