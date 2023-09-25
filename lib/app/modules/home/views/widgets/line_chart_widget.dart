@@ -142,7 +142,7 @@ class LineChartWidget extends GetView<HomeController> {
 
   LineChartBarData get lineChartBarData1_1 => LineChartBarData(
         isCurved: true,
-        color: AppColor.contentColorGreen,
+        color: AppColor.contentColorPink,
         barWidth: 8,
         isStrokeCapRound: true,
         dotData: const FlDotData(show: false),
@@ -152,7 +152,7 @@ class LineChartWidget extends GetView<HomeController> {
 
   LineChartBarData get lineChartBarData1_2 => LineChartBarData(
         isCurved: true,
-        color: AppColor.contentColorPink,
+        color: AppColor.contentColorGreen,
         barWidth: 8,
         isStrokeCapRound: true,
         dotData: const FlDotData(show: false),
