@@ -41,7 +41,7 @@ class LoginView extends GetView<LoginController> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     const Text(
-                      'My Cash Book',
+                      'My Money Pocket',
                       style: TextStyle(
                         fontSize: 24,
                         fontFamily: 'poppins',
@@ -99,7 +99,7 @@ class LoginView extends GetView<LoginController> {
                   style: ElevatedButton.styleFrom(
                     padding: EdgeInsets.symmetric(vertical: 18),
                     elevation: 0,
-                    primary: AppColor.primaryColor,
+                    primary: Color.fromARGB(255, 255, 106, 0),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),

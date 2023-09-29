@@ -18,7 +18,7 @@ class SettingView extends GetView<SettingController> {
     mHeight = MediaQuery.of(context).size.height / 1.2;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColor.primaryColor,
+        backgroundColor: AppColor.contentColorYellow,
         title: const Text('Pengaturan'),
         centerTitle: true,
       ),
@@ -43,9 +43,9 @@ class SettingView extends GetView<SettingController> {
                   ),
                 ),
                 Text("Aplikasi ini dibuat oleh:"),
-                Text("Nama\t\t\t\t: Dito Cahya Pratama"),
-                Text("NIM\t\t\t\t\t\t\t: 1941720030"),
-                Text("Tanggal\t: 23 September 2023"),
+                Text("Nama\t\t\t\t: Siwi Tyas Puspita"),
+                Text("NIM\t\t\t\t\t\t\t: 2141764024"),
+                Text("Tanggal\t: 24 September 2023"),
               ],
             )
           ],

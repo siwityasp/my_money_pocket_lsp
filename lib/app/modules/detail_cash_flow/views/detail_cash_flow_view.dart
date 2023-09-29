@@ -16,7 +16,7 @@ class DetailCashFlowView extends GetView<DetailCashFlowController> {
     mHeight = MediaQuery.of(context).size.height / 1.2;
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: AppColor.primaryColor,
+          backgroundColor: AppColor.contentColorYellow,
           title: const Text('Detail Cash Flow'),
           centerTitle: true,
         ),

@@ -16,7 +16,7 @@ class AddIncomeView extends GetView<AddIncomeController> {
     mHeight = MediaQuery.of(context).size.height / 1.2;
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: AppColor.primaryColor,
+          backgroundColor: AppColor.contentColorYellow,
           title: const Text('Tambah Pemasukan'),
           centerTitle: true,
         ),

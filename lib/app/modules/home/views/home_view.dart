@@ -53,9 +53,9 @@ class HomeView extends GetView<HomeController> {
                             padding: const EdgeInsets.all(20),
                             child: Center(
                               child: Text(
-                                'Rangkuman Bulan Ini',
+                                'RANGKUMAN BULAN INI',
                                 style: TextStyle(
-                                  color: AppColor.primaryColor,
+                                  color: AppColor.contentColorBlack,
                                   fontSize: 14,
                                   fontWeight: FontWeight.w800,
                                 ),
@@ -67,7 +67,7 @@ class HomeView extends GetView<HomeController> {
                             padding: const EdgeInsets.all(20),
                             margin: const EdgeInsets.all(10),
                             decoration: BoxDecoration(
-                              color: AppColor.dark,
+                              color: AppColor.primaryColor,
                               borderRadius: BorderRadius.circular(
                                   12.0), // Atur radius sudut
                               boxShadow: [
@@ -87,7 +87,7 @@ class HomeView extends GetView<HomeController> {
                                 Text(
                                   'Pengeluaran ${FormattedNominal(totalExpense)}',
                                   style: TextStyle(
-                                    color: AppColor.contentColorPink,
+                                    color: AppColor.contentColorBlack,
                                     fontSize: 14,
                                     fontWeight: FontWeight.w500,
                                   ),
@@ -95,7 +95,7 @@ class HomeView extends GetView<HomeController> {
                                 Text(
                                   "Pemasukan ${FormattedNominal(totalIncome)}",
                                   style: TextStyle(
-                                    color: AppColor.contentColorGreen,
+                                    color: AppColor.contentColorBlack,
                                     fontSize: 14,
                                     fontWeight: FontWeight.w500,
                                   ),
@@ -116,11 +116,11 @@ class HomeView extends GetView<HomeController> {
             padding: const EdgeInsets.all(20),
             height: 200,
             decoration: BoxDecoration(
-              color: AppColor.primaryColor,
+              color: Color.fromARGB(255, 206, 82, 44),
               borderRadius: BorderRadius.circular(12.0), // Atur radius sudut
               boxShadow: [
                 BoxShadow(
-                  color: Colors.grey.withOpacity(0.5), // Warna shadow
+                  color: Colors.black.withOpacity(0.5), // Warna shadow
                   spreadRadius: -5, // Penyebaran shadow
                   blurRadius: 7, // Blur radius shadow
                   offset: const Offset(0, 3), // Offset dari shadow (X, Y)
